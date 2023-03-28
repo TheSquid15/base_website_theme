@@ -13,7 +13,7 @@
         <div>
             <img src="<?php echo get_site_icon_url() ?>" width="100px" height="100px"/>
         </div>
-        <div>
+        <div class="links_container">
             <?php wp_nav_menu( array("menu" => "main_nav")) ?>
         </div>
     </nav>
