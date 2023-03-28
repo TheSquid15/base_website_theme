@@ -18,3 +18,11 @@ Tags: one-page, custom-colors, custom-logo
 2Lipp Theme, (C) 2020 WordPress.org
 2Lipp Theme is distributed under the terms of the GNU GPL.
 */
+
+body {
+    margin: 0 !important;
+}
+
+.navigation {
+
+}

@@ -9,7 +9,7 @@
 </head>
 <body <?php body_class(); ?>>
 <header>
-    <nav>
+    <nav class="navigation">
         <div>
             <img src="<?php echo get_site_icon_url() ?>" width="100px" height="100px"/>
         </div>
