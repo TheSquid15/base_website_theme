@@ -9,5 +9,12 @@
 </head>
 <body <?php body_class(); ?>>
 <header>
-    
+    <nav>
+        <div>
+            <img src="<?php echo get_site_icon_url() ?>" width="100px" height="100px"/>
+        </div>
+        <div>
+            <?php wp_nav_menu( array("menu" => "main_nav")) ?>
+        </div>
+    </nav>
 </header>
