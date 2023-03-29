@@ -31,7 +31,8 @@
             <?php foreach($slides as $slide) { ?>
                 <div class="slide">
                     <div class="slide-text-container">
-
+                        <h2 class="slide-title"></h2>
+                        <p class="slide-sub-title"></p>
                     </div>
                 </div>
             <?php
