@@ -39,6 +39,16 @@
             <?php
             }
             ?>
+            <div class="pips">
+            <?php 
+            if(count($slides) > 1) {
+                for($i = 0; $i < count($slides); $i++) { ?>
+                <div class="pip" onclick="setSlide(<?php echo $i; ?>)"></div>
+            <?php    
+                }
+            }
+            ?>
+        </div>
         </div>
     </div>
 </div>

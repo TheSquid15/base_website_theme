@@ -79,4 +79,3 @@ function setSlide(slideNumber) {
     transformSlides()
     resetTimer(timerFunction, msPerSlide)
 }
-

@@ -1,1 +1,0 @@
-import slides from './components/banner';

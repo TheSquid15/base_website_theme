@@ -30,6 +30,12 @@ function add_styles() {
 
 add_action( 'wp_enqueue_scripts', 'add_styles' );
 
+function add_scripts() {
+    wp_enqueue_script( 'script', get_template_directory_uri() . '/js/components/banner.js', array(), null, true);
+}
+
+add_action( 'wp_enqueue_scripts', 'add_scripts' );
+
 function add_theme_customizer_settings($wp_customize) {
     $wp_customize->add_section('logo_options', array(
         'title' => 'Logo Options',
