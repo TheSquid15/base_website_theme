@@ -27,6 +27,16 @@
 ?>
 <div class="container">
     <div class="formatting">
-        
+        <div class="slide-container">
+            <?php foreach($slides as $slide) { ?>
+                <div class="slide">
+                    <div class="slide-text-container">
+
+                    </div>
+                </div>
+            <?php
+            }
+            ?>
+        </div>
     </div>
 </div>
