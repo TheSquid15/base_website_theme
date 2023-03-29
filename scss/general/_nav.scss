@@ -1,0 +1,31 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    background-color: #ffffff;
+    .links_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        ul {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            padding: 0;
+            li {
+                margin: 0 2rem;
+                font-weight: bold;
+                a,
+                a:hover,
+                a:visited,
+                a:link,
+                a:focus,
+                a:active {
+                    text-decoration: none;
+                    color: #000000;
+                }
+            }
+        }
+    }
+}
