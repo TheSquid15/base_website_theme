@@ -10,7 +10,7 @@
 <body <?php body_class(); ?>>
 <header>
     <nav class="navigation">
-        <div>
+        <div class="icon_container">
             <img src="<?php echo get_site_icon_url() ?>" width="100px" height="100px"/>
         </div>
         <div class="links_container">
