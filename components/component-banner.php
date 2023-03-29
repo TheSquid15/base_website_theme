@@ -6,7 +6,24 @@
         $slide4 = get_field("slide_4"),
     ];
 
-    echo '<pre>', var_dump($slides), '</pre>';
+    // echo '<pre>', var_dump($slides), '</pre>';
+    /*
+    array() {
+        array(5) {
+          ["image"] => string()
+          ["title"] => string()
+          ["sub-title"] => string()
+          ["show_links"] => bool()
+          ["link_button"] => array() {
+            ["url"]=> string()
+            ["button_text"]=> string()
+            ["button_color"]=> string()
+            ["button_style"]=> bool()
+          }
+        }
+        ...n, n=3
+    }
+    */
 ?>
 <div>
 
