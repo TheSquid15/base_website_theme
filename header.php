@@ -11,7 +11,15 @@
 <header>
     <nav class="navigation">
         <div class="icon_container">
-            <img src="<?php echo get_site_icon_url() ?>" width="100px" height="100px"/>
+            <?php 
+            $sponsorLogo;
+            if(get_theme_mod('sponsor_logo')) {
+                $sponsorLogo = get_theme_mod('sponsor_logo');
+            } 
+            
+            ?>
+            <img src="<?php echo $sponsorLogo ?>" width="120px" height="auto" />
+            <img src="<?php echo get_site_icon_url() ?>" width="80px" height="80px"/>
         </div>
         <div class="links_container">
             <?php wp_nav_menu( array("menu" => "main_nav")) ?>
