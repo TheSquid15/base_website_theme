@@ -4,7 +4,7 @@
 <?php if (have_posts()) : while (have_posts()) : the_post(); $currentPostId = $post->ID; ?>
     <div id="wrapper">
         <?php 
-        include("./components/component-banner.php");
+        include get_template_directory() . '/components/component-banner.php';
         ?>
     </div>
 <?php endwhile; endif; ?>
