@@ -27,4 +27,12 @@ nav {
             }
         }
     }
+    .icon_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            margin: 1rem 2rem 1rem 0;
+        }
+    }
 }
