@@ -50,6 +50,39 @@ function add_theme_customizer_settings($wp_customize) {
         'description' => 'Logo of the sponsor that will appear in the top.',
         'section' => 'logo_options',
     )));
+    
+    $wp_customize->add_section('footer_options', array(
+        'title' => 'Footer Options',
+        'description' => 'Options to customize the footer to a degree.',
+        'priority' => 125,
+    ));
+    $wp_customize->add_setting('footer_background');
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'footer_background', array(
+        'mime_type' => 'image',
+        'label' => 'Footer Background',
+        'description' => 'Background image for the footer section',
+        'section' => 'footer_options',
+    )));
+    $wp_customize->add_setting('footer_box_1');
+    $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'footer_box_1', array(
+        'label' => 'Text for the first box in the footer',
+        'section' => 'footer_options',
+        'settings' => 'footer_box_1',
+        'type' => 'textarea',
+    ))); $wp_customize->add_setting('footer_box_2');
+    $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'footer_box_2', array(
+        'label' => 'Text for the second box in the footer',
+        'section' => 'footer_options',
+        'settings' => 'footer_box_2',
+        'type' => 'textarea',
+    )));
+    $wp_customize->add_setting('footer_box_3');
+    $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'footer_box_3', array(
+        'label' => 'Text for the third box in the footer',
+        'section' => 'footer_options',
+        'settings' => 'footer_box_3',
+        'type' => 'textarea',
+    )));
 }
 
 add_action('customize_register', 'add_theme_customizer_settings');
