@@ -3,7 +3,7 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
-    .col-xl {
+    .col {
         &-12 {
             grid-column: auto / span 12;
         }
@@ -17,7 +17,23 @@
             grid-column: auto / span 2;
         }
     }
-    @media screen and (min-width: 576px) {
+    @media screen and (max-width: 576px) {
+        .col-xs {
+            &-12 {
+                grid-column: auto / span 12;
+            }
+            &-6 {
+                grid-column: auto / span 6;
+            }
+            &-4 {
+                grid-column: auto / span 4;
+            }
+            &-2 {
+                grid-column: auto / span 2;
+            }
+        }
+    }
+    @media screen and (min-width: 576px ) and (max-width: 768px) {
         .col-small {
             &-12 {
                 grid-column: auto / span 12;
@@ -33,8 +49,8 @@
             }
         }
     }
-    @media screen and (min-width: 576px) {
-        .col {
+    @media screen and (min-width: 1200px) {
+        .col-xl {
             &-12 {
                 grid-column: auto / span 12;
             }
