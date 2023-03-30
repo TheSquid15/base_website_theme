@@ -1,0 +1,8 @@
+.row {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    .col-12 {
+        grid-column: span 12;
+    }
+}
