@@ -2,7 +2,7 @@
 $picture_left = get_field("picture_left");
 $text_right = get_field("text_right");
 ?>
-<div class="container">
+<div id="project" class="container">
     <div class="formatting">
         <div class="content_container">
             <div class="row text_and_picture container">
