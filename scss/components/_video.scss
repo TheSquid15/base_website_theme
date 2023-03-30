@@ -2,10 +2,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5rem 8rem;
     .video_wrapper {
-        width: 70%;
-        height: 100%;
+        width: 65%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -14,7 +12,7 @@
             height: 100%;
         }
         video {
-            width: 100%;
+            width: 80%;
         }
     }
 }
