@@ -69,12 +69,33 @@ function add_theme_customizer_settings($wp_customize) {
         'section' => 'footer_options',
         'settings' => 'footer_box_1',
         'type' => 'textarea',
-    ))); $wp_customize->add_setting('footer_box_2');
+    ))); 
+    $wp_customize->add_setting('footer_url_1');
+    $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'footer_url_1', array(
+        'label' => 'Url for the first box in the footer',
+        'section' => 'footer_options',
+        'settings' => 'footer_url_1',
+        'type' => 'url',
+        'input_attrs' => array(
+            'placeholder' => 'https://www.2lipp.eu',
+        ),
+    )));
+    $wp_customize->add_setting('footer_box_2');
     $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'footer_box_2', array(
         'label' => 'Text for the second box in the footer',
         'section' => 'footer_options',
         'settings' => 'footer_box_2',
         'type' => 'textarea',
+    )));
+    $wp_customize->add_setting('footer_url_2');
+    $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'footer_url_2', array(
+        'label' => 'Url for the second box in the footer',
+        'section' => 'footer_options',
+        'settings' => 'footer_url_2',
+        'type' => 'url',
+        'input_attrs' => array(
+            'placeholder' => 'https://www.2lipp.eu',
+        ),
     )));
     $wp_customize->add_setting('footer_box_3');
     $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'footer_box_3', array(
@@ -82,6 +103,16 @@ function add_theme_customizer_settings($wp_customize) {
         'section' => 'footer_options',
         'settings' => 'footer_box_3',
         'type' => 'textarea',
+    )));
+    $wp_customize->add_setting('footer_url_3');
+    $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'footer_url_3', array(
+        'label' => 'Url for the last box in the footer',
+        'section' => 'footer_options',
+        'settings' => 'footer_url_3',
+        'type' => 'url',
+        'input_attrs' => array(
+            'placeholder' => 'https://www.2lipp.eu',
+        ),
     )));
 }
 

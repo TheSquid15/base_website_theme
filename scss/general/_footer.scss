@@ -1,0 +1,21 @@
+.footer {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    .footer_row {
+        box-sizing: border-box;
+        padding: 4rem 8rem;
+        h3 {
+            color: white;
+            font-size: 64px;
+        }
+        h4 {
+            color: white;
+            font-size: 28px;
+        }
+        .col-4 {
+            box-sizing: border-box;
+            padding: 2rem;
+        }
+    }
+}
