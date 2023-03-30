@@ -18,8 +18,12 @@
             } 
             
             ?>
-            <img src="<?php echo $sponsorLogo ?>" width="120px" height="auto" />
+            <a href="">
+                <img src="<?php echo $sponsorLogo ?>" width="120px" height="auto" />
+            </a>
+            <a href="<?php echo get_home_url(); ?>">
             <img src="<?php echo get_site_icon_url() ?>" width="80px" height="80px"/>
+            </a>
         </div>
         <div class="links_container">
             <?php wp_nav_menu( array("menu" => "main_nav")) ?>

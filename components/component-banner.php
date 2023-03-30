@@ -32,12 +32,17 @@
                     <div class="slide-text-container">
                         <h2 class="slide-title"><?php echo $slide["title"]; ?></h2>
                         <p class="slide-sub-title"><?php echo $slide["sub-title"]; ?></p>
-                        
+                        <?php 
+                        if($slide["show_links"]) { 
+                        ?>
                         <div class="btn-container">
                             <a class="btn-<?php echo $slide["link_button"]["button_color"]; ?>" href="<?php echo $slide["link_button"]["url"]; ?>" >
                                 <?php echo $slide["link_button"]["button_text"]; ?>
                             </a>
                         </div>
+                        <?php
+                        }
+                        ?>
                     </div>
                     <img src="<?php echo $slide["image"]; ?>" />
                 </div>
