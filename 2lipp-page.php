@@ -7,6 +7,7 @@
         include get_template_directory() . '/components/component-banner.php';
         include get_template_directory() . '/components/component-picture-text.php';
         include get_template_directory() . '/components/component-full-text.php';
+        include get_template_directory() . '/components/component-video-container.php';
         ?>
     </div>
 <?php endwhile; endif; ?>
