@@ -18,7 +18,7 @@
         .testimonial_wrapper {
             width: 90%;
             .testimonial_portrait {
-                height: 275px;
+                height: auto;
                 img {
                     height: 100%;
                     width: 100%;
@@ -28,9 +28,10 @@
             .text_container {
                 color: white;
                 padding: 2rem;
+                font-size: 18px;
                 h4 {
                     margin-top: 0;
-                    font-size: 18px;
+                    font-size: 24px;
                 }
             }
         }
