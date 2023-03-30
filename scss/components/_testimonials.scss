@@ -1,12 +1,13 @@
 .testimonial_row {
     width: 100%;
     box-sizing: border-box;
-    padding: 0 8rem;
+    padding: 4rem 8rem;
 }
 
 .testimonials_container {
     .title-wrapper {
         h2 {
+            margin-top: 0;
             font-size: 64px;
             color: white;
         }
@@ -16,6 +17,22 @@
         justify-content: center;
         .testimonial_wrapper {
             width: 90%;
+            .testimonial_portrait {
+                height: 275px;
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+            .text_container {
+                color: white;
+                padding: 2rem;
+                h4 {
+                    margin-top: 0;
+                    font-size: 18px;
+                }
+            }
         }
     }
 }
