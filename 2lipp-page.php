@@ -5,6 +5,7 @@
     <div id="wrapper">
         <?php 
         include get_template_directory() . '/components/component-banner.php';
+        include get_template_directory() . '/components/component-picture-text.php';
         ?>
     </div>
 <?php endwhile; endif; ?>

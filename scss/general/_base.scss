@@ -25,6 +25,10 @@ header {
     }
 }
 
+.content_container {
+    height: 80vh;
+}
+
 @mixin btn-theme($theme: $main-green) {
     font-size: 16px;
     font-weight: 900;
