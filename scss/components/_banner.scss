@@ -33,6 +33,32 @@
                 font-size: 16px;
             }
         }
+        .prev, .next  {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            transform: translateY(-50%);
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 52px;
+            transition: 0.4s ease;
+            border-radius: 0 5px 5px 0;
+            user-select: none;
+        }
+        
+        .next {
+            right: 0;
+            border-radius: 5px 0 0 5px;
+        }
+    
+        /* Creates black boxes around the arrows for easier visibility when hovering */
+        .prev:hover, .next:hover {
+            background-color: rgba(45,45,45,0.5);
+            color: white;
+            text-decoration: none;
+        }
     }
     .pips {
         display: flex;

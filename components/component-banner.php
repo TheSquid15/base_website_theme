@@ -38,6 +38,12 @@
                 </div>
             <?php
             }
+            if(count($slides) > 1) {
+            ?>
+            <a class="prev" onclick="moveSlideBy(-1)">&#10094;</a>
+            <a class="next" onclick="moveSlideBy(1)">&#10095;</a>
+            <?php 
+            }
             ?>
             <div class="pips">
             <?php 
