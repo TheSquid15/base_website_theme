@@ -24,3 +24,20 @@ header {
         }
     }
 }
+
+@mixin btn-theme($theme: $main-green) {
+    font-size: 16px;
+    font-weight: 900;
+    color: white;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    border-width: 4px;
+    position: relative;
+    transition: all 0.3s ease;
+    background-color: $theme;
+    border-color: $theme;
+}
+
+.btn {
+    @include btn-theme;
+}

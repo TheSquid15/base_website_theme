@@ -33,6 +33,9 @@
                     <div class="slide-text-container">
                         <h2 class="slide-title"><?php echo $slide["title"]; ?></h2>
                         <p class="slide-sub-title"><?php echo $slide["sub-title"]; ?></p>
+                        <div class="btn-container">
+                            <a class="btn" href="#" >Button</a>
+                        </div>
                     </div>
                     <img src="<?php echo $slide["image"]; ?>" />
                 </div>
