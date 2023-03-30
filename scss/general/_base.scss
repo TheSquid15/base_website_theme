@@ -30,14 +30,39 @@ header {
     font-weight: 900;
     color: white;
     cursor: pointer;
-    padding: 1rem 2rem;
+    padding: 1.2rem 2rem;
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    min-width: 150px;
+    max-width: 200px;
     border-width: 4px;
     position: relative;
     transition: all 0.3s ease;
     background-color: $theme;
     border-color: $theme;
+    text-decoration: none;
+    &:hover {
+        background-color: darken($theme, 5%);
+    }
+    &:active {
+        background-color: darken($theme, 10%);
+    }
+
 }
 
 .btn {
     @include btn-theme;
+    &-green {
+        @include btn-theme($main-green);
+    }
+    &-light-green {
+        @include btn-theme($secondary-green);
+    }
+    &-orange {
+        @include btn-theme($accent-1);
+    }
+    &-yellow {
+        @include btn-theme($accent-2);
+    }
 }

@@ -18,7 +18,6 @@
             ["url"]=> string()
             ["button_text"]=> string()
             ["button_color"]=> string()
-            ["button_style"]=> bool()
           }
         }
         ...n, n=3
@@ -33,8 +32,11 @@
                     <div class="slide-text-container">
                         <h2 class="slide-title"><?php echo $slide["title"]; ?></h2>
                         <p class="slide-sub-title"><?php echo $slide["sub-title"]; ?></p>
+                        
                         <div class="btn-container">
-                            <a class="btn" href="#" >Button</a>
+                            <a class="btn-<?php echo $slide["link_button"]["button_color"]; ?>" href="<?php echo $slide["link_button"]["url"]; ?>" >
+                                <?php echo $slide["link_button"]["button_text"]; ?>
+                            </a>
                         </div>
                     </div>
                     <img src="<?php echo $slide["image"]; ?>" />
