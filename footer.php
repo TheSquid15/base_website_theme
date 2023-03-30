@@ -12,26 +12,37 @@ $footer_text_3 = get_theme_mod('footer_box_3');
 $footer_url_3 = get_theme_mod('footer_url_3');
 
 ?>
-<div class="container footer" style="background-image: url('<?php echo $footer_background; ?>');">
+<div id="contact" class="container footer" style="background-image: url('<?php echo $footer_background; ?>');">
     <div class="formatting">
         <div class="content_container">
             <div class="row footer_row">
+                <div class="black-filter"></div>
                 <div class="col-12">
                     <h3>Contact</h3>
                 </div>
-                <div class="col-4">
+                <div class="col-4 col-small-12">
                     <h4>Technical Questions</h4>
                     <p>
-                        <a href="<?php ?>">
-
+                        <a href="<?php echo $footer_url_1; ?>">
+                            <?php echo $footer_text_1; ?>
                         </a>
                     </p>
                 </div>
-                <div class="col-4">
+                <div class="col-4 col-small-12">
                     <h4>Press / Site specific questions</h4>
+                    <p>
+                        <a href="<?php echo $footer_url_2; ?>">
+                            <?php echo $footer_text_2; ?>
+                        </a>
+                    </p>
                 </div>
-                <div class="col-4">
+                <div class="col-4 col-small-12">
                     <h4>All other questions or inquiries</h4>
+                    <p>
+                        <a href="<?php echo $footer_url_3; ?>">
+                            <?php echo $footer_text_3; ?>
+                        </a>
+                    </p>
                 </div>
             </div>
         </div>

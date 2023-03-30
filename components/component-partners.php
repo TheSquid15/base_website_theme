@@ -1,7 +1,7 @@
 <?php
 
 ?>
-<div class="container">
+<div id="partners" class="container">
     <div class="formatting">
         <div class="content_container">
             <div class="row partners_row">
