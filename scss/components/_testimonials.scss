@@ -1,9 +1,21 @@
+.testimonial_row {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 8rem;
+}
+
 .testimonials_container {
     .title-wrapper {
-        padding: 0 8rem;
         h2 {
             font-size: 64px;
             color: white;
+        }
+    }
+    .testimonial_container {
+        display: flex;
+        justify-content: center;
+        .testimonial_wrapper {
+            width: 90%;
         }
     }
 }
