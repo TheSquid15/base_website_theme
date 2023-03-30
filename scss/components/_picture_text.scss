@@ -4,5 +4,18 @@
     .picture_container,
     .text_container {
         height: 100%;
+        overflow: hidden;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        .text {
+            padding: 5rem;
+        }
     }
 }

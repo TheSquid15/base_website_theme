@@ -41,7 +41,7 @@ function slide() {
 }
 
 // Set slide timer
-const msPerSlide = 7000;
+const msPerSlide = 12000;
 const timerFunction = slide;
 
 let intervalTimer = setInterval(timerFunction, msPerSlide);

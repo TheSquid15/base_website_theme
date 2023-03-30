@@ -6,13 +6,13 @@ $text_right = get_field("text_right");
     <div class="formatting">
         <div class="content_container">
             <div class="row text_and_picture container">
-                <div class="col-6 picture_container" style="background-color: red;">
+                <div class="col-6 col-xs-12 picture_container">
                     <img src="<?php echo $picture_left; ?>" />
                 </div>
-                <div class="col-6 text_container" style="background-color: orange;">
-                    <p>
-                        HAHAHAHA
-                    </p>
+                <div class="col-6 col-xs-12 text_container">
+                    <div class="text">
+                        <?php echo $text_right; ?>
+                    </div>
                 </div>
             </div>
         </div>
