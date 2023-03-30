@@ -36,5 +36,38 @@
             height: 100%;
             z-index: 1;
         }
+        .socials {
+            position: absolute;
+            bottom: 4rem;
+            left: 10rem;
+            z-index: 4;
+            display: flex;
+            a {
+                background-color: white;
+                border-radius: 100%;
+                margin-right: 0.8rem;
+                height: 60px;
+                width: 60px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+                transition: all 0.3s ease;
+                &:hover {
+                    background-color: $main-green;
+                }
+                &:hover i {
+                    color: white;
+                }
+                &:active {
+                    background-color: lighten($main-green, 5%);
+                }
+                i {
+                    font-size: 36px;
+                    color: $main-green;
+                    transition: all 0.3s ease;
+                }
+            }
+        }
     }
 }

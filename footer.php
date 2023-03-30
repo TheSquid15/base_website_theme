@@ -44,6 +44,14 @@ $footer_url_3 = get_theme_mod('footer_url_3');
                         </a>
                     </p>
                 </div>
+                <div class="socials">
+                    <a href="#">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-linkedin "></i>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
