@@ -3,6 +3,7 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
+    height: 100%;
     .col {
         &-12 {
             grid-column: auto / span 12;

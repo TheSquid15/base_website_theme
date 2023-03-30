@@ -12,6 +12,10 @@ header {
     z-index: 2;
 }
 
+h2 {
+    text-transform: uppercase;
+}
+
 .wrapper {
     width: 100%;
     overflow: hidden;
@@ -27,6 +31,21 @@ header {
 
 .content_container {
     height: 80vh;
+}
+
+.box {
+    &-green {
+        background-color: $main-green;
+    }
+    &-light-green {
+        background-color: $secondary-green;
+    }
+    &-orange {
+        background-color: $accent-1;
+    }
+    &-yellow {
+        background-color: $accent-2;
+    }
 }
 
 @mixin btn-theme($theme: $main-green) {
