@@ -9,6 +9,7 @@
         include get_template_directory() . '/components/component-full-text.php';
         include get_template_directory() . '/components/component-video-container.php';
         include get_template_directory() . '/components/component-text-picture.php';
+        include get_template_directory() . '/components/component-testimonials.php';
 
         ?>
     </div>

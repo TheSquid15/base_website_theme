@@ -2,10 +2,12 @@
     width: 100%;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: auto;
+    grid-template-rows: max-content;
     height: 100%;
     .col {
+        height: fit-content;
         &-12 {
+            @extend .col;
             grid-column: auto / span 12;
         }
         &-6 {
