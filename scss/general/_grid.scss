@@ -28,33 +28,22 @@ $grid-points: 12, 6, 4 ,2;
         @media screen and (max-width: 768px) {
             &-small {
                 height: fit-content;
-                &-12 {
-                    grid-column: auto / span 12;
-                }
-                &-6 {
-                    grid-column: auto / span 6;
-                }
-                &-4 {
-                    grid-column: auto / span 4;
-                }
-                &-2 {
-                    grid-column: auto / span 2;
+                @each $grid-point in $grid-points {
+                    &-#{$grid-point} {
+                        @extend .col-small;
+                        grid-column: auto / span #{$grid-point};
+                    }
                 }
             }
         }
         @media screen and (min-width: 1200px) {
             &-xl {
-                &-12 {
-                    grid-column: auto / span 12;
-                }
-                &-6 {
-                    grid-column: auto / span 6;
-                }
-                &-4 {
-                    grid-column: auto / span 4;
-                }
-                &-2 {
-                    grid-column: auto / span 2;
+                height: fit-content;
+                @each $grid-point in $grid-points {
+                    &-#{$grid-point} {
+                        @extend .col-xl;
+                        grid-column: auto / span #{$grid-point};
+                    }
                 }
             }
         }
