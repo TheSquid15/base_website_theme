@@ -7,7 +7,6 @@ $grid-points: 12, 6, 4 ,2;
     grid-template-rows: max-content;
     height: 100%;
     .col {
-        height: fit-content;
         @each $grid-point in $grid-points {
             &-#{$grid-point} {
                 @extend .col;
@@ -16,7 +15,6 @@ $grid-points: 12, 6, 4 ,2;
         }
         @media screen and (max-width: 576px) {
             &-xs {
-                height: fit-content;
                 @each $grid-point in $grid-points {
                     &-#{$grid-point} {
                         @extend .col-xs;
@@ -27,7 +25,6 @@ $grid-points: 12, 6, 4 ,2;
         }
         @media screen and (max-width: 768px) {
             &-small {
-                height: fit-content;
                 @each $grid-point in $grid-points {
                     &-#{$grid-point} {
                         @extend .col-small;
@@ -38,7 +35,6 @@ $grid-points: 12, 6, 4 ,2;
         }
         @media screen and (min-width: 1200px) {
             &-xl {
-                height: fit-content;
                 @each $grid-point in $grid-points {
                     &-#{$grid-point} {
                         @extend .col-xl;
