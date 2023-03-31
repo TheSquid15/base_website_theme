@@ -44,6 +44,9 @@ $footer_url_3 = get_theme_mod('footer_url_3');
                         </a>
                     </p>
                 </div>
+                <div class="col-12">
+                    <h4>The project is funded by the European Union (Horizon-CL5-2022)</h4>
+                </div>
                 <div class="socials">
                     <a href="#">
                         <i class="fa fa-twitter"></i>
