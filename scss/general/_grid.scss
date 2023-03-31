@@ -11,60 +11,63 @@
             grid-column: auto / span 12;
         }
         &-6 {
+            @extend .col;
             grid-column: auto / span 6;
         }
         &-4 {
+            @extend .col;
             grid-column: auto / span 4;
         }
         &-2 {
+            @extend .col;
             grid-column: auto / span 2;
         }
-    }
-    @media screen and (max-width: 576px) {
-        .col-xs {
-            &-12 {
-                grid-column: auto / span 12;
-            }
-            &-6 {
-                grid-column: auto / span 6;
-            }
-            &-4 {
-                grid-column: auto / span 4;
-            }
-            &-2 {
-                grid-column: auto / span 2;
-            }
-        }
-    }
-    @media screen and (max-width: 768px) {
-        .col-small {
-            &-12 {
-                grid-column: auto / span 12;
-            }
-            &-6 {
-                grid-column: auto / span 6;
-            }
-            &-4 {
-                grid-column: auto / span 4;
-            }
-            &-2 {
-                grid-column: auto / span 2;
+        @media screen and (max-width: 576px) {
+            &-xs {
+                &-12 {
+                    grid-column: auto / span 12;
+                }
+                &-6 {
+                    grid-column: auto / span 6;
+                }
+                &-4 {
+                    grid-column: auto / span 4;
+                }
+                &-2 {
+                    grid-column: auto / span 2;
+                }
             }
         }
-    }
-    @media screen and (min-width: 1200px) {
-        .col-xl {
-            &-12 {
-                grid-column: auto / span 12;
+        @media screen and (max-width: 768px) {
+            &-small {
+                &-12 {
+                    grid-column: auto / span 12;
+                }
+                &-6 {
+                    grid-column: auto / span 6;
+                }
+                &-4 {
+                    grid-column: auto / span 4;
+                }
+                &-2 {
+                    grid-column: auto / span 2;
+                }
             }
-            &-6 {
-                grid-column: auto / span 6;
-            }
-            &-4 {
-                grid-column: auto / span 4;
-            }
-            &-2 {
-                grid-column: auto / span 2;
+        }
+        @media screen and (min-width: 1200px) {
+            &-xl {
+                &-12 {
+                    grid-column: auto / span 12;
+                }
+                &-6 {
+                    grid-column: auto / span 6;
+                }
+                &-4 {
+                    grid-column: auto / span 4;
+                }
+                &-2 {
+                    grid-column: auto / span 2;
+                }
             }
         }
     }

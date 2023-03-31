@@ -9,7 +9,7 @@
                     <h2>Partners</h2>
                 </div>
                 <div class="col-12 partner_logo_container">
-                    <img src="http://localhost/2Lipp2/wp-content/uploads/2023/03/Udklip.png" />
+                    <img src="https://2lipp.eu/home/wp-content/uploads/2023/03/Udklip.png" />
                 </div>
             </div>
         </div>
