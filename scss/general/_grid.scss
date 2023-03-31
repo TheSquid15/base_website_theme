@@ -16,9 +16,10 @@ $grid-points: 12, 6, 4 ,2;
         }
         @media screen and (max-width: 576px) {
             &-xs {
+                height: fit-content;
                 @each $grid-point in $grid-points {
                     &-#{$grid-point} {
-                        @extend .col;
+                        @extend .col-xs;
                         grid-column: auto / span #{$grid-point};
                     }
                 }
@@ -26,6 +27,7 @@ $grid-points: 12, 6, 4 ,2;
         }
         @media screen and (max-width: 768px) {
             &-small {
+                height: fit-content;
                 &-12 {
                     grid-column: auto / span 12;
                 }
