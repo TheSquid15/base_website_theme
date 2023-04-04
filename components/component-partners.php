@@ -5,7 +5,7 @@
     <div class="formatting">
         <div class="content_container">
             <div class="row partners_row">
-                <div class="col-12">
+                <div class="col-12 title-wrapper">
                     <h2>Partners</h2>
                 </div>
                 <div class="col-12 partner_logo_container">

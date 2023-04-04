@@ -3,6 +3,7 @@ nav {
     justify-content: space-between;
     padding: 0 2rem;
     background-color: #ffffff;
+    z-index: 3;
     @media screen and (max-width: 1076px) {
         flex-direction: column;
     }
@@ -11,8 +12,14 @@ nav {
         justify-content: center;
         align-items: center;
         font-size: 24px;
+        max-height: fit-content;
+        transition: all 0.6s cubic-bezier(.76,.02,.39,1.04);
         @media screen and (max-width: 1288px) {
             font-size: 18px;
+        }
+        @media screen and (max-width: 768px) {
+            max-height: 0px;
+            overflow: hidden;
         }
         ul {
             display: flex;
@@ -49,6 +56,17 @@ nav {
         align-items: center;
         img {
             margin: 1rem 2rem 1rem 0;
+        }
+    }
+    .burger_btn {
+        padding: 1rem;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        margin-left: auto;
+        @media screen and (max-width: 768px) {
+            display: flex;
         }
     }
 }
