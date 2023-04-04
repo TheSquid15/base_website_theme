@@ -32,7 +32,7 @@
             <i class="fa fa-bars"></i>
             <i class="fa fa-times"></i>
         </a>
-        <div class="menu btn2" data-menu="2">
+        <div id="burger_btn" class="menu burger_btn">
             <div class="icon"></div>
         </div>
     </nav>

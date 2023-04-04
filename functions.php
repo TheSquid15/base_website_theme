@@ -34,6 +34,7 @@ add_action( 'wp_enqueue_scripts', 'add_styles' );
 function add_scripts() {
     wp_enqueue_script( 'script', get_template_directory_uri() . '/js/components/banner.js', array(), null, true);
     wp_enqueue_script( 'anchor-script', get_template_directory_uri() . '/js/components/anchor-links.js', array(), null, true);
+    wp_enqueue_script( 'hamburger-script', get_template_directory_uri() . '/js/components/hamburgermenu.js', array(), null, true);
 }
 
 add_action( 'wp_enqueue_scripts', 'add_scripts' );
