@@ -12,7 +12,7 @@ let window_x = window;
 window_x.addEventListener("resize", function() {
     if(this.innerWidth > 768) {
         if(link_container.style.maxHeight = "0px") {
-            link_container.style.maxHeight = "fit-content";
+            link_container.style.removeProperty("max-height");
         }
     }
     if(this.innerWidth <= 768) {
