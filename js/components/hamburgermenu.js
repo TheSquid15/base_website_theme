@@ -12,7 +12,12 @@ btn.addEventListener("click", function() {
 let window_x = window;
 
 window_x.addEventListener("resize", function() {
-    if(this.innerWidth >= 768) {
-        link_container.style.maxHeight = "fit-content";
+    if(this.innerWidth > 768) {
+        if(link_container.style.maxHeight = "0px") {
+            link_container.style.maxHeight = "fit-content";
+        }
+    }
+    if(this.innerWidth <= 768) {
+        link_container.style.maxHeight = "0px";
     }
 });
