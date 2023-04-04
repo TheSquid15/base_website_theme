@@ -28,10 +28,6 @@
         <div class="links_container">
             <?php wp_nav_menu( array("menu" => "main_nav")) ?>
         </div>
-        <a href="javascript:void(0);" class="burger_icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-            <i class="fa fa-times"></i>
-        </a>
         <div id="burger_btn" class="menu burger_btn">
             <div class="icon"></div>
         </div>
