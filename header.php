@@ -28,5 +28,12 @@
         <div class="links_container">
             <?php wp_nav_menu( array("menu" => "main_nav")) ?>
         </div>
+        <a href="javascript:void(0);" class="burger_icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+            <i class="fa fa-times"></i>
+        </a>
+        <div class="menu btn2" data-menu="2">
+            <div class="icon"></div>
+        </div>
     </nav>
 </header>

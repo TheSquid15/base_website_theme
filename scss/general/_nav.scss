@@ -51,4 +51,19 @@ nav {
             margin: 1rem 2rem 1rem 0;
         }
     }
+    .burger_icon {
+        padding: 1rem;
+        display: none;
+        color: $secondary-green;
+        justify-content: flex-end;
+        align-items: center;
+        font-size: 24px;
+        text-decoration: none;
+        &:active {
+            color: $main-green;
+        }
+        @media screen and (max-width: 768px) {
+            display: flex;
+        }
+    }
 }
