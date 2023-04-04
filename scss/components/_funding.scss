@@ -15,4 +15,11 @@
             object-fit: cover;
         }
     }
+    .sponsor_text {
+        .text {
+            @media screen and (max-width: 992px) {
+                padding: 4rem 8rem 0;
+            }
+        }
+    }
 }
