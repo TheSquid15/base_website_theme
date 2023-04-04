@@ -33,6 +33,16 @@ $grid-points: 12, 6, 4 ,2;
                 }
             }
         }
+        @media screen and (max-width: 992px) {
+            &-md {
+                @each $grid-point in $grid-points {
+                    &-#{$grid-point} {
+                        @extend .col-md;
+                        grid-column: auto / span #{$grid-point};
+                    }
+                }
+            }
+        }
         @media screen and (min-width: 1200px) {
             &-xl {
                 @each $grid-point in $grid-points {
