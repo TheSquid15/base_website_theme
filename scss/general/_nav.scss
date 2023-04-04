@@ -3,19 +3,32 @@ nav {
     justify-content: space-between;
     padding: 0 2rem;
     background-color: #ffffff;
+    @media screen and (max-width: 1076px) {
+        flex-direction: column;
+    }
     .links_container {
         display: flex;
         justify-content: center;
         align-items: center;
         font-size: 24px;
+        @media screen and (max-width: 1288px) {
+            font-size: 18px;
+        }
         ul {
             display: flex;
             align-items: center;
+            justify-content: center;
             list-style: none;
             padding: 0;
+            @media screen and (max-width: 886px) {
+                flex-wrap: wrap;
+            }
             li {
                 margin: 0 2rem;
                 font-weight: 500;
+                @media screen and (max-width: 886px) {
+                    margin: 1rem 2rem;
+                }
                 a {
                     color: $main-green;
                     text-decoration: none;
