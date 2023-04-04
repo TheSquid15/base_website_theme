@@ -4,8 +4,6 @@ const cssObj = window.getComputedStyle(link_container, null);
 
 btn.addEventListener("click", function() {
     this.classList.toggle("open");
-
-    console.log(cssObj.getPropertyValue("max-height"));
     link_container.style.maxHeight = cssObj.getPropertyValue("max-height") == "0px" ? "1000px" : "0px";
 });
 
