@@ -1,9 +1,9 @@
 @mixin btn($left, $top) {
-    position: absolute;
     width: 60px;
     height: 60px;
     top: $top;
     left: $left;
+    position: relative;
     transition-duration: 0.5s;
 }
 
@@ -49,17 +49,17 @@
 }
 
 .burger_btn{
-    @include btn(120px, 100px);
+    @include btn(0, 0);
 
     .icon {
-        @include icon(8px, 60px);
+        @include icon(5px, 45px);
         
         &:before{
-        @include icon-before(8px, 60px, -20px);
+        @include icon-before(5px, 45px, -10px);
         }
         
         &:after{
-        @include icon-after(8px, 60px, 20px);
+        @include icon-after(5px, 45px, 10px);
         }
     }
 
@@ -69,11 +69,11 @@
         background: transparent;
         
         &:before{
-            transform: rotateZ(45deg) scaleX(1.25) translate(13px, 13px);
+            transform: rotateZ(45deg) scaleX(1.1) translate(5px, 8px);
         }
 
         &:after{
-            transform: rotateZ(-45deg) scaleX(1.25) translate(12px, -12px);
+            transform: rotateZ(-45deg) scaleX(1.1) translate(5px, -8px);
         }
         }
     }
