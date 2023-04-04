@@ -2,6 +2,9 @@
     width: 100%;
     box-sizing: border-box;
     padding: 4rem 8rem;
+    @media screen and (max-width: 576px) {
+        padding: 4rem 4rem;
+    }
 }
 
 .testimonials_container {
@@ -15,6 +18,13 @@
     .testimonial_container {
         display: flex;
         justify-content: center;
+        margin-bottom: 1rem;
+        @media screen and (max-width: 992px) {
+            margin-bottom: 3rem;
+        }
+        @media screen and (max-width: 576px) {
+            margin-bottom: 5rem;
+        }
         .testimonial_wrapper {
             width: 90%;
             .testimonial_portrait {

@@ -25,7 +25,7 @@ array() {
                 <?php
                 foreach($quotes as $quote) {
                 ?>
-                <div class="col-4 col-xs-12 testimonial_container">
+                <div class="col-4 col-md-12 testimonial_container">
                     <div class="testimonial_wrapper box-light-green">
                         <div class="testimonial_portrait">
                             <img src="<?php echo $quote["portrait"]; ?>" />
