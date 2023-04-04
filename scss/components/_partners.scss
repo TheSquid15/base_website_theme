@@ -1,6 +1,9 @@
 .partners_row {
     padding: 4rem 8rem;
     box-sizing: border-box;
+    @media screen and (max-width: 992px) {
+        
+    }
     h2 {
         color: $secondary-green;
     }
