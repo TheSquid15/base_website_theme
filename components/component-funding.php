@@ -5,7 +5,7 @@ $sponsor_text = get_field("sponsor_text");
 <div id="funding" class="container">
     <div class="formatting">
         <div class="content_container">
-            <div class="row text_and_picture container">
+            <div class="row text_and_picture container funding_comp">
                 <div class="col-6 col-md-12 sponsor_container">
                     <img src="<?php echo $sponsor; ?>" />
                 </div>
