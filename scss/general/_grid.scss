@@ -6,9 +6,6 @@ $grid-points: 12, 6, 4 ,2;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: max-content;
     height: 100%;
-    @media screen and (max-width: 992px) {
-        padding: 1rem;
-    }
     .col {
         @each $grid-point in $grid-points {
             &-#{$grid-point} {
