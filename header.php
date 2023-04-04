@@ -25,7 +25,7 @@
             <img src="<?php echo get_site_icon_url() ?>" width="80px" height="80px"/>
             </a>
         </div>
-        <div class="links_container">
+        <div id="links_container" class="links_container">
             <?php wp_nav_menu( array("menu" => "main_nav")) ?>
         </div>
         <div id="burger_btn" class="menu burger_btn">
