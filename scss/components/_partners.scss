@@ -1,11 +1,12 @@
 .partners_row {
     padding: 4rem 8rem;
     box-sizing: border-box;
-    @media screen and (max-width: 992px) {
-        
+    @media screen and (max-width: 768px) {
+        padding: 2rem 4rem;
     }
     h2 {
         color: $secondary-green;
+        margin-top: 0;
     }
     .title-wrapper {
         h2 {
