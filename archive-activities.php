@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <?php wp_reset_query(); ?>
-<?php if(have_posts()) : ?>
+<?php if (have_posts()) : ?>
 <div class="container">
     <div class="formatting">
         <div class="content_container">
@@ -14,6 +14,7 @@
 
                     </div>
                 </div>
+                <?php endwhile; ?>
             </div>
         </div>
     </div>
