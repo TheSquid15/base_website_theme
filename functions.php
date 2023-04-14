@@ -133,7 +133,7 @@ function register_2lipp_partners_cpt() {
         "view_item" => 'See partner',
         "search_items" => 'Search for partner',
         "not_found" => 'No partners found',
-        "not_found_in_trash" => 'No parnters found in trashcan',
+        "not_found_in_trash" => 'No partners found in trashcan',
         "archives" => 'Partners', 
         "insert_into_item" => 'Insert into partner',
         "uploaded_to_this_item" => 'Upload to this partner',
@@ -165,3 +165,76 @@ function register_2lipp_partners_cpt() {
     register_post_type( "partners", $args );
 }
 add_action( 'init', 'register_2lipp_partners_cpt' );
+
+function register_2lipp_activities_cpt() {
+    $labels = array(
+        "name" => 'Activities',
+        "singular_name" => 'Activity',
+        "menu_name" => 'Activities',
+        "all_items" => 'All activities',
+        "add_new" => 'Add new',
+        "add_new_item" => 'Add new activity',
+        "edit_item" => 'Edit activity',
+        "new_item" => 'New activity',
+        "view_item" => 'See activity',
+        "search_items" => 'Search for activity',
+        "not_found" => 'No activities found',
+        "not_found_in_trash" => 'No activities found in trashcan',
+        "archives" => 'Activities', 
+        "insert_into_item" => 'Insert into activity',
+        "uploaded_to_this_item" => 'Upload to this activity',
+        "filter_items_list" => 'Filter activity list',
+        "items_list_navigation" =>'Activity list navigation',
+        "items_list" => 'Activity list',
+    );
+
+    $args = array(
+        "label" => 'Activities',
+        "labels" => $labels,
+        "description" => "",
+        "public" => true,
+        "show_ui" => true,
+        "show_in_rest" => true,
+        "rest_base" => "",
+        "has_archive" => true,
+        "show_in_menu" => true,
+        "exclude_from_search" => false,
+        "capability_type" => "post",
+        "map_meta_cap" => true,
+        "hierarchical" => false,
+        "rewrite" => array( "slug" => "", "with_front" => false ),
+        "query_var" => true,
+        "menu_position" => 4,
+        "menu_icon" => "dashicons-megaphone",
+        "supports" => array( "title", "thumbnail", "editor" ),
+    );
+    register_post_type( "activities", $args );
+}
+add_action( 'init', 'register_2lipp_activities_cpt' );
+
+function register_activities_taxanomy(){
+    $labels = array(
+        "name" => "Activity categories",
+        "singular_name" => "Activity category",
+    );
+
+    $args = array(
+        "label" => "Activity categories",
+        "labels" => $labels,
+        "public" => false,
+        "publicly_queryable" => true,
+        "hierarchical" => true,
+        "show_ui" => true,
+        "show_in_menu" => true,
+        "show_in_nav_menus" => true,
+        "query_var" => true,
+        "rewrite" => array('slug' => 'activity_categories', 'with_front' => true,),
+        "show_admin_column" => false,
+        "show_in_rest" => true,
+        "rest_base" => "activity_categories",
+        "rest_controller_class" => "WP_REST_Terms_Controller",
+        "show_in_quick_edit" => true,
+    );
+    register_taxonomy("activity_categories", array("activities"), $args);
+}
+add_action( 'init', 'register_activities_taxanomy' );

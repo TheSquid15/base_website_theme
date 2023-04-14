@@ -1,0 +1,13 @@
+.green {
+    color: $main-green;
+}
+
+.black {
+    color: black;
+}
+
+.light- {
+    &green {
+        color: $secondary-green;
+    }
+}
