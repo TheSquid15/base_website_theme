@@ -29,7 +29,7 @@ $footer_url_3 = get_theme_mod('footer_url_3');
                     </p>
                 </div>
                 <div class="col-4 col-small-12">
-                    <h4>Press / Site specific questions</h4>
+                    <h4>Press</h4>
                     <p>
                         <a href="<?php echo $footer_url_2; ?>">
                             <?php echo $footer_text_2; ?>
@@ -37,7 +37,7 @@ $footer_url_3 = get_theme_mod('footer_url_3');
                     </p>
                 </div>
                 <div class="col-4 col-small-12">
-                    <h4>All other questions or inquiries</h4>
+                    <h4>All other questions</h4>
                     <p>
                         <a href="<?php echo $footer_url_3; ?>">
                             <?php echo $footer_text_3; ?>
@@ -45,15 +45,15 @@ $footer_url_3 = get_theme_mod('footer_url_3');
                     </p>
                 </div>
                 <div class="col-12 eu-horizon">
+                    <div class="socials">
+                        <a href="#">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-linkedin "></i>
+                        </a>
+                    </div>
                     <h4>The project is funded by the European Union (Horizon-CL5-2022)</h4>
-                </div>
-                <div class="socials">
-                    <a href="#">
-                        <i class="fa fa-twitter"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fa fa-linkedin "></i>
-                    </a>
                 </div>
             </div>
         </div>

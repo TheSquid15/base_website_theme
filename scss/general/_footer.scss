@@ -36,12 +36,17 @@
             height: 100%;
             z-index: 1;
         }
+        .eu-horizon {
+            display: flex;
+            align-items: center;
+            h4 {
+                font-size: 20px;
+            }
+        }
         .socials {
-            position: absolute;
-            bottom: 4rem;
-            left: 10rem;
             z-index: 4;
             display: flex;
+            margin-right: 1rem;
             a {
                 background-color: white;
                 border-radius: 100%;
