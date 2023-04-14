@@ -211,3 +211,30 @@ function register_2lipp_activities_cpt() {
     register_post_type( "activities", $args );
 }
 add_action( 'init', 'register_2lipp_activities_cpt' );
+
+function register_activities_taxanomy(){
+    $labels = array(
+        "name" => "Activity categories",
+        "singular_name" => "Activity category",
+    );
+
+    $args = array(
+        "label" => "Activity categories",
+        "labels" => $labels,
+        "public" => false,
+        "publicly_queryable" => true,
+        "hierarchical" => true,
+        "show_ui" => true,
+        "show_in_menu" => true,
+        "show_in_nav_menus" => true,
+        "query_var" => true,
+        "rewrite" => array('slug' => 'activity_categories', 'with_front' => true,),
+        "show_admin_column" => false,
+        "show_in_rest" => true,
+        "rest_base" => "activity_categories",
+        "rest_controller_class" => "WP_REST_Terms_Controller",
+        "show_in_quick_edit" => true,
+    );
+    register_taxonomy("activity_categories", array("activities"), $args);
+}
+add_action( 'init', 'register_activities_taxanomy' );
