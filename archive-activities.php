@@ -11,7 +11,7 @@
                         <h3><?php echo get_the_title(); ?></h3>
                     </div>
                     <div class="text_container">
-
+                        <p><?php echo get_the_excerpt(); ?></p>
                     </div>
                 </div>
                 <?php endwhile; ?>
