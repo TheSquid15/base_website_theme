@@ -133,7 +133,7 @@ function register_2lipp_partners_cpt() {
         "view_item" => 'See partner',
         "search_items" => 'Search for partner',
         "not_found" => 'No partners found',
-        "not_found_in_trash" => 'No parnters found in trashcan',
+        "not_found_in_trash" => 'No partners found in trashcan',
         "archives" => 'Partners', 
         "insert_into_item" => 'Insert into partner',
         "uploaded_to_this_item" => 'Upload to this partner',
@@ -166,26 +166,26 @@ function register_2lipp_partners_cpt() {
 }
 add_action( 'init', 'register_2lipp_partners_cpt' );
 
-function register_2lipp_partners_cpt() {
+function register_2lipp_activities_cpt() {
     $labels = array(
-        "name" => 'Partners',
-        "singular_name" => 'Partner',
-        "menu_name" => 'Partners',
-        "all_items" => 'All partners',
+        "name" => 'Activities',
+        "singular_name" => 'Activity',
+        "menu_name" => 'Activities',
+        "all_items" => 'All activities',
         "add_new" => 'Add new',
-        "add_new_item" => 'Add new partner',
-        "edit_item" => 'Edit partner',
-        "new_item" => 'New partner',
-        "view_item" => 'See partner',
-        "search_items" => 'Search for partner',
-        "not_found" => 'No partners found',
-        "not_found_in_trash" => 'No parnters found in trashcan',
-        "archives" => 'Partners', 
-        "insert_into_item" => 'Insert into partner',
-        "uploaded_to_this_item" => 'Upload to this partner',
-        "filter_items_list" => 'Filter partner list',
-        "items_list_navigation" =>'Partner list navigation',
-        "items_list" => 'Partner list',
+        "add_new_item" => 'Add new activity',
+        "edit_item" => 'Edit activity',
+        "new_item" => 'New activity',
+        "view_item" => 'See activity',
+        "search_items" => 'Search for activity',
+        "not_found" => 'No activities found',
+        "not_found_in_trash" => 'No activities found in trashcan',
+        "archives" => 'Activities', 
+        "insert_into_item" => 'Insert into activity',
+        "uploaded_to_this_item" => 'Upload to this activity',
+        "filter_items_list" => 'Filter activity list',
+        "items_list_navigation" =>'Activity list navigation',
+        "items_list" => 'Activity list',
     );
 
     $args = array(
@@ -210,4 +210,4 @@ function register_2lipp_partners_cpt() {
     );
     register_post_type( "partners", $args );
 }
-add_action( 'init', 'register_2lipp_partners_cpt' );
+add_action( 'init', 'register_2lipp_activities_cpt' );
