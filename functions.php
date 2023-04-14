@@ -189,7 +189,7 @@ function register_2lipp_activities_cpt() {
     );
 
     $args = array(
-        "label" => 'Partners',
+        "label" => 'Activities',
         "labels" => $labels,
         "description" => "",
         "public" => true,
@@ -205,9 +205,9 @@ function register_2lipp_activities_cpt() {
         "rewrite" => array( "slug" => "", "with_front" => false ),
         "query_var" => true,
         "menu_position" => 4,
-        "menu_icon" => "dashicons-groups",
+        "menu_icon" => "dashicons-megaphone",
         "supports" => array( "title", "thumbnail", "editor" ),
     );
-    register_post_type( "partners", $args );
+    register_post_type( "activities", $args );
 }
 add_action( 'init', 'register_2lipp_activities_cpt' );
