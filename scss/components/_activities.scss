@@ -89,6 +89,15 @@ $marquee-element-width: math.div($marquee-width, $marquee-elements-displayed);
                                 margin-top: auto;
                                 a {
                                     color: white;
+                                    font-size: 24px;
+                                    font-weight: bold;
+                                    transition: all 0.3s ease;
+                                    &:hover {
+                                        color: darken(white, 10%);
+                                    }
+                                    &:active {
+                                        color: darken(white, 20%);
+                                    }
                                 }
                             }
                         }
@@ -101,16 +110,16 @@ $marquee-element-width: math.div($marquee-width, $marquee-elements-displayed);
             top: calc(50%);
             transform: translateY(-50%);
             z-index: 1;
-            font-size: 64px;
+            font-size: 82px;
             color: white;
             cursor: pointer;
             user-select: none;
         }
         .prev {
-            left: 0;
+            left: -30px;
         }
         .next {
-            right: 0;
+            right: -30px;
         }
     }
 }
