@@ -20,12 +20,23 @@ function transformActivities() {
             previous.classList.toggle("hidden");
         }
     }
+    else if(currentOffset == 0) {
+        if(!previous.classList.contains("hidden")) {
+            previous.classList.toggle("hidden");
+        }
+    }
 
     if(currentOffset < maxActivities) {
         if(next.classList.contains("hidden")) {
             next.classList.toggle("hidden");
         }
     }
+    else if(currentOffset == maxActivities) {
+        if(!next.classList.contains("hidden")) {
+            next.classList.toggle("hidden");
+        }
+    }
+
 }
 
 transformActivities();

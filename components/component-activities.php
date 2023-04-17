@@ -28,7 +28,7 @@ $all_activities = get_posts($args);
                             <li class="activity"><p>Hello!</p><img src="" alt=""></li>
                         </ul>
                     </div>
-                    <a id="prev" class="prev">&#10094;</a>
+                    <a id="prev" class="prev hidden">&#10094;</a>
                     <a id="next" class="next">&#10095;</a>
                 </div>
             </div>
