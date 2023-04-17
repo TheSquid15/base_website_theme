@@ -51,6 +51,10 @@ function home_filter_url($items) {
 
 add_filter('wp_nav_menu_objects', 'home_filter_url', 10, 2);
 
+add_filter('excerpt_length', function($length) {
+    return 20;
+}, PHP_INT_MAX);
+
 function add_theme_customizer_settings($wp_customize) {
     $wp_customize->add_section('logo_options', array(
         'title' => 'Logo Options',
