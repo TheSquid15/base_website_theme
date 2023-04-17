@@ -22,13 +22,15 @@ $all_activities = get_posts($args);
                         <ul class="kiosk-activities">
                             <?php foreach($all_activities as $id) { ?>
                             <li class="activity">
-                                <div class="activity-image-container">
-                                <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $id ), 'single-post-thumbnail'); ?>
-                                <?php if(isset($image) && is_array($image)) { ?>
-                                    <img class="activity-image" src="<?php echo $image[0]; ?>" />
-                                <?php
-                                }
-                                ?>
+                                <div class="activity-wrapper">
+                                    <div class="activity-image-container">
+                                    <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $id ), 'single-post-thumbnail'); ?>
+                                    <?php if(isset($image) && is_array($image)) { ?>
+                                        <img class="activity-image" src="<?php echo $image[0]; ?>" />
+                                    <?php
+                                    }
+                                    ?>
+                                    </div>
                                 </div>
                             </li>
                             <?php
