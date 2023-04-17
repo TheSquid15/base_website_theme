@@ -28,6 +28,8 @@ $all_activities = get_posts($args);
                             <li class="activity"><p>Hello!</p><img src="" alt=""></li>
                         </ul>
                     </div>
+                    <a id="prev" class="prev">&#10094;</a>
+                    <a id="next" class="next">&#10095;</a>
                     <?php
                     echo '<pre>', var_dump($all_activities), '</pre>';
                     ?>

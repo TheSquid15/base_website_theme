@@ -1,6 +1,9 @@
 // Get all the elements with the activity class
 const activities = document.querySelectorAll(".activity");
 
+const previous = document.getElementById("prev");
+const next = document.getElementById("next");
+
 console.log(activities);
 
 let currentOffset = 0;
@@ -11,6 +14,26 @@ function transformActivities() {
     activities.forEach((box, index) => {
         box.style.transform = `translateX(calc(${-100 * (currentOffset)}%))`;
     });
+
+    if(currentOffset > 0) {
+        if(previous.classList.contains("hidden")) {
+            previous.classList.toggle("hidden");
+        }
+    }
+
+    if(currentOffset < maxActivities) {
+        if(next.classList.contains("hidden")) {
+            next.classList.toggle("hidden");
+        }
+    }
 }
 
 transformActivities();
+
+function moveBoxes(moveOffsetBy) {
+    let newOffset = currentOffset + moveOffsetBy;
+
+    if( newOffset > maxActivities ) {
+        currentOffset = 0;
+    }
+}
