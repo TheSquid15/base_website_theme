@@ -39,6 +39,17 @@ function add_scripts() {
 
 add_action( 'wp_enqueue_scripts', 'add_scripts' );
 
+function home_filter_url($items) {
+    if(!is_front_page()) {
+        foreach($items as $item) {
+            $item->url = get_home_url() . $item->url;
+        }
+    }
+    return $items;
+}
+
+add_filter('wp_nav_menu_objects', 'home_filter_url', 10, 2);
+
 function add_theme_customizer_settings($wp_customize) {
     $wp_customize->add_section('logo_options', array(
         'title' => 'Logo Options',

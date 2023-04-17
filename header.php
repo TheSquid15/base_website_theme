@@ -26,7 +26,7 @@
             </a>
         </div>
         <div id="links_container" class="links_container">
-            <?php wp_nav_menu( array("menu" => "main_nav")) ?>
+            <?php wp_nav_menu( array( "menu" => "main_nav" ) ); ?>
         </div>
         <div id="burger_btn" class="menu burger_btn">
             <div class="icon"></div>
