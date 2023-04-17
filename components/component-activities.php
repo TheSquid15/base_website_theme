@@ -20,12 +20,20 @@ $all_activities = get_posts($args);
                 <div class="col-12 kiosk">
                     <div class="kiosk-container">
                         <ul class="kiosk-activities">
-                            <li class="activity"><p>Hello!</p><img src="" alt=""></li>
-                            <li class="activity"><p>Hello!</p><img src="" alt=""></li>
-                            <li class="activity"><p>Hello!</p><img src="" alt=""></li>
-                            <li class="activity"><p>Hello!</p><img src="" alt=""></li>
-                            <li class="activity"><p>Hello!</p><img src="" alt=""></li>
-                            <li class="activity"><p>Hello!</p><img src="" alt=""></li>
+                            <?php foreach($all_activities as $id) { ?>
+                            <li class="activity">
+                                <div class="activity-image-container">
+                                <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $id ), 'single-post-thumbnail'); ?>
+                                <?php if(isset($image) && is_array($image)) { ?>
+                                    <img class="activity-image" src="<?php echo $image[0]; ?>" />
+                                <?php
+                                }
+                                ?>
+                                </div>
+                            </li>
+                            <?php
+                            } 
+                            ?>
                         </ul>
                     </div>
                     <a id="prev" class="prev hidden" onclick="moveBoxes(-1)">&#10094;</a>

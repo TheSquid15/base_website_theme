@@ -4,14 +4,12 @@ const activities = document.querySelectorAll(".activity");
 const previous = document.getElementById("prev");
 const next = document.getElementById("next");
 
-console.log(activities);
-
 let currentOffset = 0;
 
 let maxActivities = activities.length - 1;
 
 function transformActivities() {
-    activities.forEach((box, index) => {
+    activities.forEach((box) => {
         box.style.transform = `translateX(calc(${-100 * (currentOffset)}%))`;
     });
 
@@ -31,7 +29,7 @@ function transformActivities() {
             next.classList.toggle("hidden");
         }
     }
-    else if(currentOffset == maxActivities - 2) {
+    else if(currentOffset >= maxActivities - 2) {
         if(!next.classList.contains("hidden")) {
             next.classList.toggle("hidden");
         }
