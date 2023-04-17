@@ -1,3 +1,50 @@
-.activities-archive-row {
-    
+$marquee-width: 100%;
+$marquee-height: 20vh;
+$marquee-elements-displayed: 3;
+$marquee-element-width: $marquee-width / $marquee-elements-displayed;
+
+.activities_row {
+    padding: 4rem 8rem;
+    overflow: hidden;
+    .title-wrapper {
+        h2 {
+            font-size: 64px;
+            color: white;
+        }
+    }
+    .kiosk {
+        position: relative;
+        .kiosk-container {
+            width: $marquee-width;
+            height: $marquee-height;
+            overflow: hidden;
+            position: relative;
+            &::before, &::after {
+                position: absolute;
+                width: 10rem;
+                top: 0;
+                height: 100%;
+                content: "";
+                z-index: 1;
+            }
+            &::before {
+                left: 0;
+                background: linear-gradient(to right, $main-green, transparent 100%);
+            }
+            &::after {
+                right: 0;
+                background: linear-gradient(to left, $main-green, transparent 100%);
+            }
+            .kiosk-activities {
+                list-style: none;
+                height: 100%;
+                display: flex;
+                margin: 0;
+                padding: 0;
+                li {
+                    width: $marquee-element-width;
+                }
+            }
+        }
+    }
 }
