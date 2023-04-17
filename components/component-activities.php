@@ -20,12 +20,12 @@ $all_activities = get_posts($args);
                 <div class="col-12 kiosk">
                     <div class="kiosk-container">
                         <ul class="kiosk-activities">
-                            <li><img src="" alt=""></li>
-                            <li><img src="" alt=""></li>
-                            <li><img src="" alt=""></li>
-                            <li><img src="" alt=""></li>
-                            <li><img src="" alt=""></li>
-                            <li><img src="" alt=""></li>
+                            <li><p>Hello!</p><img src="" alt=""></li>
+                            <li><p>Hello!</p><img src="" alt=""></li>
+                            <li><p>Hello!</p><img src="" alt=""></li>
+                            <li><p>Hello!</p><img src="" alt=""></li>
+                            <li><p>Hello!</p><img src="" alt=""></li>
+                            <li><p>Hello!</p><img src="" alt=""></li>
 
                         </ul>
                     </div>

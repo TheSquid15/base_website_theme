@@ -1,7 +1,9 @@
+@use "sass:math";
+
 $marquee-width: 100%;
-$marquee-height: 20vh;
+$marquee-height: fit-content;
 $marquee-elements-displayed: 3;
-$marquee-element-width: $marquee-width / $marquee-elements-displayed;
+$marquee-element-width: math.div($marquee-width, $marquee-elements-displayed);
 
 .activities_row {
     padding: 4rem 8rem;
@@ -21,7 +23,7 @@ $marquee-element-width: $marquee-width / $marquee-elements-displayed;
             position: relative;
             &::before, &::after {
                 position: absolute;
-                width: 10rem;
+                width: 2rem;
                 top: 0;
                 height: 100%;
                 content: "";
@@ -39,10 +41,13 @@ $marquee-element-width: $marquee-width / $marquee-elements-displayed;
                 list-style: none;
                 height: 100%;
                 display: flex;
+                flex-wrap: nowrap;
                 margin: 0;
                 padding: 0;
+                overflow: hidden;
                 li {
-                    width: $marquee-element-width;
+                    transition: all 0.4s ease;
+                    min-width: $marquee-element-width;
                 }
             }
         }
