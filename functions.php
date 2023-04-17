@@ -35,9 +35,25 @@ function add_scripts() {
     wp_enqueue_script( 'script', get_template_directory_uri() . '/js/components/banner.js', array(), null, true);
     wp_enqueue_script( 'anchor-script', get_template_directory_uri() . '/js/components/anchor-links.js', array(), null, true);
     wp_enqueue_script( 'hamburger-script', get_template_directory_uri() . '/js/components/hamburgermenu.js', array(), null, true);
+    wp_enqueue_script( 'activities-script', get_template_directory_uri() . '/js/components/activities.js', array(), null, true);
 }
 
 add_action( 'wp_enqueue_scripts', 'add_scripts' );
+
+function home_filter_url($items) {
+    if(!is_front_page()) {
+        foreach($items as $item) {
+            $item->url = get_home_url() . $item->url;
+        }
+    }
+    return $items;
+}
+
+add_filter('wp_nav_menu_objects', 'home_filter_url', 10, 2);
+
+add_filter('excerpt_length', function($length) {
+    return 20;
+}, PHP_INT_MAX);
 
 function add_theme_customizer_settings($wp_customize) {
     $wp_customize->add_section('logo_options', array(

@@ -6,6 +6,7 @@ $grid-points: 12, 6, 4 ,2;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: max-content;
     height: 100%;
+    box-sizing: border-box;
     .col {
         @each $grid-point in $grid-points {
             &-#{$grid-point} {
