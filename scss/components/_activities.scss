@@ -59,6 +59,7 @@ $marquee-element-width: math.div($marquee-width, $marquee-elements-displayed);
             font-size: 64px;
             color: white;
             cursor: pointer;
+            user-select: none;
         }
         .prev {
             left: 0;

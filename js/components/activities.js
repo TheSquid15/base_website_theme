@@ -26,17 +26,16 @@ function transformActivities() {
         }
     }
 
-    if(currentOffset < maxActivities) {
+    if(currentOffset < maxActivities - 2) {
         if(next.classList.contains("hidden")) {
             next.classList.toggle("hidden");
         }
     }
-    else if(currentOffset == maxActivities) {
+    else if(currentOffset == maxActivities - 2) {
         if(!next.classList.contains("hidden")) {
             next.classList.toggle("hidden");
         }
     }
-
 }
 
 transformActivities();
@@ -47,4 +46,12 @@ function moveBoxes(moveOffsetBy) {
     if( newOffset > maxActivities ) {
         currentOffset = 0;
     }
+    else if (newOffset < 0) {
+        currentOffset = maxActivities;
+    }
+    else {
+        currentOffset = newOffset;
+    }
+
+    transformActivities();
 }
