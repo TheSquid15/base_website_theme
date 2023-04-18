@@ -6,7 +6,7 @@
             <div class="single_container">
                 <div class="row single_row">
                     <div class="col-12">
-                        <h2><?php the_title(); ?></h2>
+                        <h2 class="post-title"><?php the_title(); ?></h2>
                     </div>
                     <div class="col-12">
                         <div class="image-container">

@@ -1,11 +1,17 @@
 .single_row {
     padding: 4rem 8rem;
+    .col-12 {
+        .post-title {
+            font-size: 64px;
+            color: $secondary-green;
+        }
+    }
     .image-container {
         padding: 0 2rem;
         float: right;
         img {
             width: 400px;
-            height: 400px;
+            height: auto;
             object-fit: cover;
         }
     }
