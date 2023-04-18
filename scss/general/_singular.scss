@@ -7,4 +7,10 @@
             color: $secondary-green;
         }
     }
+    .col-8 {
+        grid-column: 3 / span 8;
+        p {
+            margin: 2rem 0;
+        }
+    }
 }
