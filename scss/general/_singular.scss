@@ -1,6 +1,9 @@
 .single_row {
     padding: 4rem 8rem;
     justify-content: center;
+    @media screen and (max-width: 992px) {
+        padding: 2rem 4rem;
+    }
     .col-12 {
         .post-title {
             font-size: 64px;
@@ -9,6 +12,9 @@
     }
     .col-8 {
         grid-column: 3 / span 8;
+        @media screen and (max-width: 992px) {
+            grid-column: auto / span 12 ;
+        }
         p {
             margin: 2rem 0;
         }
