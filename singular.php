@@ -8,7 +8,7 @@
                     <div class="col-12">
                         <h2 class="post-title"><?php the_title(); ?></h2>
                     </div>
-                    <div class="col-12">
+                    <div class="col-8 centered">
                         <?php the_content(); ?>
                     </div>
                 </div>
