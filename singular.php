@@ -9,9 +9,6 @@
                         <h2 class="post-title"><?php the_title(); ?></h2>
                     </div>
                     <div class="col-12">
-                        <div class="image-container">
-                            <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="" />
-                        </div>
                         <?php the_content(); ?>
                     </div>
                 </div>
