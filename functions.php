@@ -32,10 +32,13 @@ function add_styles() {
 add_action( 'wp_enqueue_scripts', 'add_styles' );
 
 function add_scripts() {
-    wp_enqueue_script( 'script', get_template_directory_uri() . '/js/components/banner.js', array(), null, true);
     wp_enqueue_script( 'anchor-script', get_template_directory_uri() . '/js/components/anchor-links.js', array(), null, true);
     wp_enqueue_script( 'hamburger-script', get_template_directory_uri() . '/js/components/hamburgermenu.js', array(), null, true);
-    wp_enqueue_script( 'activities-script', get_template_directory_uri() . '/js/components/activities.js', array(), null, true);
+
+    if(is_front_page()) {
+        wp_enqueue_script( 'script', get_template_directory_uri() . '/js/components/banner.js', array(), null, true);
+        wp_enqueue_script( 'activities-script', get_template_directory_uri() . '/js/components/activities.js', array(), null, true);
+    }
 }
 
 add_action( 'wp_enqueue_scripts', 'add_scripts' );
@@ -52,7 +55,7 @@ function home_filter_url($items) {
 add_filter('wp_nav_menu_objects', 'home_filter_url', 10, 2);
 
 add_filter('excerpt_length', function($length) {
-    return 20;
+    return 25;
 }, PHP_INT_MAX);
 
 function add_theme_customizer_settings($wp_customize) {
