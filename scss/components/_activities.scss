@@ -5,9 +5,23 @@ $marquee-height: fit-content;
 $marquee-elements-displayed: 3;
 $marquee-element-width: math.div($marquee-width, $marquee-elements-displayed);
 
+:root {
+    --marquee-width: 100%;
+    --marquee-height: fit-content;
+    --marquee-elements-displayed: 3;
+    --marquee-elements-width: calc(var(--marquee-width) / var(--marquee-elements-displayed));
+    @media screen and (max-width: 992px) {
+        --marquee-elements-displayed: 1;
+        --marquee-elements-width: calc(var(--marquee-width) / var(--marquee-elements-displayed));
+    }
+}
+
 .activities_row {
     padding: 4rem 8rem;
     overflow: hidden;
+    @media screen and (max-width: 992px) {
+        padding: 2rem 4rem;
+    }
     .title-wrapper {
         h2 {
             font-size: 64px;
@@ -47,8 +61,8 @@ $marquee-element-width: math.div($marquee-width, $marquee-elements-displayed);
                 overflow: hidden;
                 li {
                     transition: all 0.4s ease;
-                    min-width: $marquee-element-width;
-                    max-width: $marquee-element-width;
+                    min-width: var(--marquee-elements-width);
+                    max-width: var(--marquee-elements-width);
                 }
                 .activity {
                     .activity-container {

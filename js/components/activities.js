@@ -24,14 +24,28 @@ function transformActivities() {
         }
     }
 
-    if(currentOffset < maxActivities - 2) {
-        if(next.classList.contains("hidden")) {
-            next.classList.toggle("hidden");
+    if(window.innerWidth <= 992) {
+        if(currentOffset < maxActivities) {
+            if(next.classList.contains("hidden")) {
+                next.classList.toggle("hidden");
+            }
+        }
+        else if(currentOffset >= maxActivities) {
+            if(!next.classList.contains("hidden")) {
+                next.classList.toggle("hidden");
+            }
         }
     }
-    else if(currentOffset >= maxActivities - 2) {
-        if(!next.classList.contains("hidden")) {
-            next.classList.toggle("hidden");
+    else {
+        if(currentOffset < maxActivities - 2) {
+            if(next.classList.contains("hidden")) {
+                next.classList.toggle("hidden");
+            }
+        }
+        else if(currentOffset >= maxActivities - 2) {
+            if(!next.classList.contains("hidden")) {
+                next.classList.toggle("hidden");
+            }
         }
     }
 }
