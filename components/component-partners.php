@@ -5,7 +5,7 @@ $args = array(
     'post_type' => 'partners',
     'posts_per_page' => -1,
     'post_status' => 'publish',
-    'order_by' => 'rand'
+    'order' => 'ASC',
 );
 
 $query = new WP_Query($args);
