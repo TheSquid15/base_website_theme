@@ -1,4 +1,4 @@
-$grid-points: 12, 10, 8, 6, 4 ,2;
+$grid-points: 12, 10, 8, 6, 4, 3 ,2;
 
 .row {
     width: 100%;
@@ -14,31 +14,11 @@ $grid-points: 12, 10, 8, 6, 4 ,2;
                 grid-column: auto / span #{$grid-point};
             }
         }
-        @media screen and (max-width: 576px) {
-            &-xs {
+        @media screen and (min-width: 1200px) {
+            &-xl {
                 @each $grid-point in $grid-points {
                     &-#{$grid-point} {
-                        @extend .col-xs;
-                        grid-column: auto / span #{$grid-point};
-                    }
-                }
-            }
-        }
-        @media screen and (max-width: 768px) {
-            &-small {
-                @each $grid-point in $grid-points {
-                    &-#{$grid-point} {
-                        @extend .col-small;
-                        grid-column: auto / span #{$grid-point};
-                    }
-                }
-            }
-        }
-        @media screen and (max-width: 992px) {
-            &-md {
-                @each $grid-point in $grid-points {
-                    &-#{$grid-point} {
-                        @extend .col-md;
+                        @extend .col-xl;
                         grid-column: auto / span #{$grid-point};
                     }
                 }
@@ -54,11 +34,31 @@ $grid-points: 12, 10, 8, 6, 4 ,2;
                 }
             }
         }
-        @media screen and (min-width: 1200px) {
-            &-xl {
+        @media screen and (max-width: 992px) {
+            &-md {
                 @each $grid-point in $grid-points {
                     &-#{$grid-point} {
-                        @extend .col-xl;
+                        @extend .col-md;
+                        grid-column: auto / span #{$grid-point};
+                    }
+                }
+            }
+        }
+        @media screen and (max-width: 768px) {
+            &-small {
+                @each $grid-point in $grid-points {
+                    &-#{$grid-point} {
+                        @extend .col-small;
+                        grid-column: auto / span #{$grid-point};
+                    }
+                }
+            }
+        }
+        @media screen and (max-width: 576px) {
+            &-xs {
+                @each $grid-point in $grid-points {
+                    &-#{$grid-point} {
+                        @extend .col-xs;
                         grid-column: auto / span #{$grid-point};
                     }
                 }
