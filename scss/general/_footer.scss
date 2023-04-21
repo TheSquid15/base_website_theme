@@ -6,6 +6,9 @@
         box-sizing: border-box;
         padding: 4rem 8rem 8rem;
         color: white;
+        @media screen and (max-width: 992px) {
+            padding: 4rem;
+        }
         h3 {
             font-size: 64px;
         }
