@@ -29,6 +29,7 @@ nav {
             padding: 0;
             @media screen and (max-width: 886px) {
                 flex-wrap: wrap;
+                width: 100%;
             }
             li {
                 margin: 0 2rem;
