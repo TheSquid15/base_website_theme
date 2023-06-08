@@ -53,7 +53,7 @@ $footer_url_3 = get_theme_mod('footer_url_3');
                             <i class="fa fa-linkedin "></i>
                         </a>
                     </div>
-                    <h4>The project is funded by the European Union (Horizon-CL5-2022)</h4>
+                    <h4>The project is co-funded by the European Union (Horizon-CL5-2022)</h4>
                 </div>
             </div>
         </div>
