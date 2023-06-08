@@ -13,7 +13,7 @@ nav {
         align-items: center;
         font-size: 24px;
         max-height: fit-content;
-        transition: all 0.6s cubic-bezier(.76,.02,.39,1.04);
+        transition: all 0.4s cubic-bezier(.76,.02,.39,1.04);
         @media screen and (max-width: 1288px) {
             font-size: 18px;
         }
@@ -29,13 +29,13 @@ nav {
             padding: 0;
             @media screen and (max-width: 886px) {
                 flex-wrap: wrap;
-                width: 100%;
             }
             li {
                 margin: 0 2rem;
                 font-weight: 500;
                 @media screen and (max-width: 886px) {
-                    margin: 1rem 2rem;
+                    width: 100%;
+                    display: flex;
                 }
                 a {
                     color: $main-green;
@@ -46,6 +46,11 @@ nav {
                     }
                     &:active {
                         color: darken($main-green, 10%);
+                    }
+                    @media screen and (max-width: 886px) {
+                        width: 100%;
+                        text-align: center;
+                        padding: 1rem 2rem;
                     }
                 }
             }
