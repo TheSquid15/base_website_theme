@@ -49,7 +49,7 @@ $footer_url_3 = get_theme_mod('footer_url_3');
                         <a href="#">
                             <i class="fa fa-twitter"></i>
                         </a>
-                        <a href="#">
+                        <a href="https://www.linkedin.com/company/2lipp-2nd-life-for-power-plants/" target="_blank">
                             <i class="fa fa-linkedin "></i>
                         </a>
                     </div>
