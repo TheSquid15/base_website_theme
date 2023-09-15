@@ -84,6 +84,13 @@ function add_theme_customizer_settings($wp_customize) {
         'description' => 'Background image for the footer section',
         'section' => 'footer_options',
     )));
+    $wp_customize->add_setting('footer_title_1');
+    $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'footer_title_1', array(
+        'label' => 'Title for the first box in the footer',
+        'section' => 'footer_options',
+        'settings' => 'footer_title_1',
+        'type' => 'text',
+    ))); 
     $wp_customize->add_setting('footer_box_1');
     $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'footer_box_1', array(
         'label' => 'Text for the first box in the footer',
@@ -100,6 +107,13 @@ function add_theme_customizer_settings($wp_customize) {
         'input_attrs' => array(
             'placeholder' => 'https://www.2lipp.eu',
         ),
+    )));
+    $wp_customize->add_setting('footer_title_2');
+    $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'footer_title_2', array(
+        'label' => 'Title for the second box in the footer',
+        'section' => 'footer_options',
+        'settings' => 'footer_title_2',
+        'type' => 'text',
     )));
     $wp_customize->add_setting('footer_box_2');
     $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'footer_box_2', array(
