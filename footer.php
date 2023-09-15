@@ -4,8 +4,10 @@ if(get_theme_mod('footer_background')) {
     $footer_background = get_theme_mod('footer_background');
 }
 
+$footer_title_1 = get_theme_mod('footer_title_1');
 $footer_text_1 = get_theme_mod('footer_box_1');
 $footer_url_1 = get_theme_mod('footer_url_1');
+$footer_title_2 = get_theme_mod('footer_title_2');
 $footer_text_2 = get_theme_mod('footer_box_2');
 $footer_url_2 = get_theme_mod('footer_url_2');
 
@@ -19,7 +21,7 @@ $footer_url_2 = get_theme_mod('footer_url_2');
                     <h3>Contact</h3>
                 </div>
                 <div class="col-6 col-small-12">
-                    <h4>Technical Questions</h4>
+                    <h4><?php echo $footer_title_1; ?></h4>
                     <p>
                         <a href="<?php echo $footer_url_1; ?>">
                             <?php echo $footer_text_1; ?>
@@ -27,7 +29,7 @@ $footer_url_2 = get_theme_mod('footer_url_2');
                     </p>
                 </div>
                 <div class="col-6 col-small-12">
-                    <h4>All other questions</h4>
+                    <h4><?php echo $footer_title_2; ?></h4>
                     <p>
                         <a href="<?php echo $footer_url_2; ?>">
                             <?php echo $footer_text_2; ?>
