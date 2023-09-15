@@ -15,10 +15,6 @@
         h4 {
             font-size: 28px;
         }
-        .col-12 {
-            padding: 0 2rem;
-            z-index: 2;
-        }
         $grid-points: 12, 10, 8, 6, 4, 3 ,2;
         .col {
             @each $grid-point in $grid-points {
