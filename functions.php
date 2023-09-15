@@ -118,23 +118,6 @@ function add_theme_customizer_settings($wp_customize) {
             'placeholder' => 'https://www.2lipp.eu',
         ),
     )));
-    $wp_customize->add_setting('footer_box_3');
-    $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'footer_box_3', array(
-        'label' => 'Text for the third box in the footer',
-        'section' => 'footer_options',
-        'settings' => 'footer_box_3',
-        'type' => 'textarea',
-    )));
-    $wp_customize->add_setting('footer_url_3');
-    $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'footer_url_3', array(
-        'label' => 'Url for the last box in the footer',
-        'section' => 'footer_options',
-        'settings' => 'footer_url_3',
-        'type' => 'url',
-        'input_attrs' => array(
-            'placeholder' => 'https://www.2lipp.eu',
-        ),
-    )));
 }
 
 add_action('customize_register', 'add_theme_customizer_settings');
