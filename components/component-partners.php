@@ -22,7 +22,7 @@ $query = new WP_Query($args);
                 if( $query->have_posts() ):
                     while ($query->have_posts()): $query->the_post(); $id = get_the_ID();
                     $logo = get_field("partner_logo", $id);
-                    $pageURL = get_field("partner_homepage", $id);
+                    $pageURL = get_permalink();
                 ?>
                 <div class="partner-logo-container col-3 col-small-12 col-md-6 col-large-4">
                     <?php if(isset($logo)): ?>
