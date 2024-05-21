@@ -1,4 +1,4 @@
-// Get all slides
+/* // Get all slides
 const slides = document.querySelectorAll(".slide");
 
 // Set the slideshow to the first slide
@@ -78,4 +78,4 @@ function setSlide(slideNumber) {
 
     transformSlides()
     resetTimer(timerFunction, msPerSlide)
-}
+} */

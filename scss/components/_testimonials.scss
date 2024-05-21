@@ -11,7 +11,7 @@
     .title-wrapper {
         h2 {
             margin-top: 0;
-            font-size: 64px;
+            font-size: clamp(1rem, 64px, 2rem);
             color: white;
         }
     }
@@ -21,6 +21,9 @@
         margin-bottom: 1rem;
         @media screen and (max-width: 992px) {
             margin-bottom: 3rem;
+            &:last-of-type {
+                margin-bottom: 0;
+            }
         }
         @media screen and (max-width: 576px) {
             margin-bottom: 5rem;
@@ -38,10 +41,10 @@
             .text_container {
                 color: white;
                 padding: 2rem;
-                font-size: 18px;
+                font-size: 14px;
                 h4 {
                     margin-top: 0;
-                    font-size: 24px;
+                    font-size: clamp(1rem, 18px, 2rem);
                 }
             }
         }

@@ -5,6 +5,8 @@ $quotes = [
     get_field("testimonial_3"),
 ];
 
+$testimonial_title = get_field("testimonial_title");
+
 //echo '<pre>', var_dump($quotes), '</pre>';
 /* 
 array() {
@@ -20,7 +22,7 @@ array() {
         <div class="content_container testimonials_container box-green">
             <div class="row testimonial_row">
                 <div class="col-12 title-wrapper">
-                    <h2>Why 2LIPP?</h2>
+                    <h2><?php echo $testimonial_title; ?></h2>
                 </div>
                 <?php
                 foreach($quotes as $quote) {
