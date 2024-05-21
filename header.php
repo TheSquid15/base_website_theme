@@ -14,13 +14,12 @@
             <?php 
             $sponsorLogo;
             if(get_theme_mod('sponsor_logo')) {
-                $sponsorLogo = get_theme_mod('sponsor_logo');
+                $sponsorLogo = get_theme_mod('sponsor_logo'); ?>
+                <a href="">
+                    <img src="<?php echo $sponsorLogo ?>" width="auto" height="80px" />
+                </a> <?php
             } 
-            
             ?>
-            <a href="">
-                <img src="<?php echo $sponsorLogo ?>" width="auto" height="80px" />
-            </a>
             <a href="<?php echo get_home_url(); ?>">
                 <img src="<?php echo get_site_icon_url() ?>" width="80px" height="80px"/>
             </a>
