@@ -21,7 +21,7 @@
             } 
             ?>
             <a href="<?php echo get_home_url(); ?>">
-                <img src="<?php echo get_site_icon_url() ?>" width="80px" height="80px"/>
+                <img src="<?php echo get_site_icon_url() ?>" width="160px" height="80px"/>
             </a>
         </div>
         <div id="links_container" class="links_container">
