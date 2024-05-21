@@ -38,14 +38,14 @@ nav {
                     display: flex;
                 }
                 a {
-                    color: $main-green;
+                    color: $main;
                     text-decoration: none;
                     transition: all 0.3s ease;
                     &:hover {
-                        color: lighten($main-green, 10%);
+                        color: lighten($main, 10%);
                     }
                     &:active {
-                        color: darken($main-green, 10%);
+                        color: darken($main, 10%);
                     }
                     @media screen and (max-width: 886px) {
                         width: 100%;

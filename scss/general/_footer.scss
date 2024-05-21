@@ -64,7 +64,7 @@
                 text-decoration: none;
                 transition: all 0.3s ease;
                 &:hover {
-                    background-color: $main-green;
+                    background-color: $main;
                 }
                 &:hover i {
                     color: white;
@@ -73,11 +73,11 @@
                     color: white;
                 }
                 &:active {
-                    background-color: lighten($main-green, 5%);
+                    background-color: lighten($main, 5%);
                 }
                 i {
                     font-size: 36px;
-                    color: $main-green;
+                    color: $main;
                     transition: all 0.3s ease;
                 }
             }

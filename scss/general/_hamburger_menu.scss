@@ -12,7 +12,7 @@
     position: absolute;
     height: $height;
     width: $width;
-    background-color: $secondary-green;
+    background-color: $secondary;
 }
 
 @mixin icon-before($height, $width, $top) {
@@ -20,7 +20,7 @@
     position: absolute;
     width: $width;
     height: $height;
-    background-color: $secondary-green;
+    background-color: $secondary;
     content: "";
     top: $top;
 }
@@ -30,7 +30,7 @@
     position: absolute;
     width: $width;
     height: $height;
-    background-color: $secondary-green;
+    background-color: $secondary;
     content: "";
     top: $top;
 }
