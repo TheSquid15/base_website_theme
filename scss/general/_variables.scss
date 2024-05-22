@@ -8,4 +8,5 @@ $secondary-font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Robot
 $main: #028d5a;
 $secondary: #8a5838;
 $accent-1: #d7cec5;
+$accent-1-light: lighten($accent-1, 15%);
 $accent-2: #0a4029;
