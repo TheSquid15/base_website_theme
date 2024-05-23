@@ -1,4 +1,4 @@
-<?php /* Template Name: 2Lipp Page Template */ ?>
+<?php /* Template Name: Base ECD Page Template */ ?>
 <?php get_header(); ?>
 <?php wp_reset_query(); ?>
 <?php if (have_posts()) : while (have_posts()) : the_post(); $currentPostId = $post->ID; ?>
