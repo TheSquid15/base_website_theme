@@ -136,7 +136,7 @@ function add_theme_customizer_settings($wp_customize) {
 
 add_action('customize_register', 'add_theme_customizer_settings');
 
-function register_2lipp_partners_cpt() {
+function register_partners_cpt() {
     $labels = array(
         "name" => 'Partners',
         "singular_name" => 'Partner',
@@ -180,9 +180,9 @@ function register_2lipp_partners_cpt() {
     );
     register_post_type( "partners", $args );
 }
-add_action( 'init', 'register_2lipp_partners_cpt' );
+add_action( 'init', 'register_partners_cpt' );
 
-function register_2lipp_activities_cpt() {
+function register_activities_cpt() {
     $labels = array(
         "name" => 'Activities',
         "singular_name" => 'Activity',
@@ -226,7 +226,7 @@ function register_2lipp_activities_cpt() {
     );
     register_post_type( "activities", $args );
 }
-add_action( 'init', 'register_2lipp_activities_cpt' );
+add_action( 'init', 'register_activities_cpt' );
 
 function register_activities_taxanomy(){
     $labels = array(
