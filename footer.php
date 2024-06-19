@@ -42,7 +42,7 @@ $footer_url_2 = get_theme_mod('footer_url_2');
                             <i class="fa fa-linkedin "></i>
                         </a>
                     </div>
-                    <h4>The project is co-funded by the European Union (xxxxxxxxx)</h4>
+                    <h4>The project is co-funded by the European Union, grant agreement ID: 101138620</h4>
                 </div>
             </div>
         </div>
