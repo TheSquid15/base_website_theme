@@ -26,7 +26,7 @@ $query = new WP_Query($args);
                 ?>
                 <div class="partner-logo-container col-3 col-small-12 col-md-6 col-large-4">
                     <?php if(isset($logo)): ?>
-                    <a href="<?php echo $pageURL; ?>">
+                    <a href="<?php echo get_permalink(); ?>">
                         <img class="partner-logo" src="<?php echo $logo; ?>" />
                     </a>
                     <?php
